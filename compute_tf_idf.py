@@ -26,14 +26,14 @@ import sys
 
 def compute_tf_idf_score():
     # read inverted index
-    with open(r'E:/BE-FinalYear-CSE-XIE/FinalYr_BE_Project/Final_Scholarly/scholarly (1)/scholarly/Re-cleaned-pr0f_data_cleaned/name_and_affiliation_index_full.json') as f:
+    with open(r'Re-cleaned-pr0f_data_cleaned/name_and_affiliation_index_full.json') as f:
         data = json.load(f)
     
     # list of terms/words
     term_list = data.keys()
 
     # list of number of professors in each csv
-    csv_sizes = list(pd.read_csv(r'E:/BE-FinalYear-CSE-XIE/FinalYr_BE_Project/Final_Scholarly/scholarly (1)/scholarly/Re-cleaned-pr0f_data_cleaned/metadata.csv', header=None)[0])
+    csv_sizes = list(pd.read_csv(r'Re-cleaned-pr0f_data_cleaned/metadata.csv', header=None)[0])
 
     # list of all professor ids (Global IDs)
     id_list = []
@@ -87,7 +87,7 @@ def compute_tf_idf_score():
         scores[str(t)+'_'+str(d)] = tf*idf
 
     # saving computed scores as JSON
-    with open(r"C:\Users\Balaji\OneDrive\Desktop\scholarlyRe-cleaned-pr0f_data_cleaned/tf_idf_scores_topic_and_paper_full.json", "w+") as fp: 
+    with open(r"Re-cleaned-pr0f_data_cleaned/tf_idf_scores_topic_and_paper_full.json", "w+") as fp: 
         json.dump(scores, fp)
 
 

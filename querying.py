@@ -14,11 +14,11 @@ import sys
 #from google.colab import drive
 #drive.mount('/content/drive')
 
-index1 = r"E:/BE-FinalYear-CSE-XIE/FinalYr_BE_Project/Final_Scholarly/scholarly (1)/scholarly/Re-cleaned-pr0f_data_cleaned/name_and_affiliation_index_full.json"
+index1 = r"Re-cleaned-pr0f_data_cleaned/name_and_affiliation_index_full.json"
 with open(index1) as f:
     name_and_affiliation_index = json.load(f)
 
-index2 = r"E:/BE-FinalYear-CSE-XIE/FinalYr_BE_Project/Final_Scholarly\scholarly (1)/scholarly/Re-cleaned-pr0f_data_cleaned/topic_and_paper_index_full.json"
+index2 = r"Re-cleaned-pr0f_data_cleaned/topic_and_paper_index_full.json"
 with open(index2) as f:
     topic_and_paper_index = json.load(f)
 
