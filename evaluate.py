@@ -52,7 +52,7 @@ avgquerytime['prof-paper-tf-idf'] = []
 file_count = 26
 
 # read the cleaned csv files 
-filepath=r'E:/BE-FinalYear-CSE-XIE/FinalYr_BE_Project/Final_Scholarly/scholarly (1)/scholarly/Re-cleaned-pr0f_data_cleaned'
+filepath=r'Re-cleaned-pr0f_data_cleaned'
 data_files = [pd.read_csv(filepath+'/pr0f_data-'+chr(ord('a')+file_index)+'-cleaned.csv',header=None,encoding='utf8') for file_index in range(file_count) ]
 
 
