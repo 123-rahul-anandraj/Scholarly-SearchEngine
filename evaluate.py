@@ -57,7 +57,7 @@ try:
     data_files = [pd.read_csv(filepath+'/pr0f_data-'+chr(ord('a')+file_index)+'-cleaned.csv',header=None,encoding='utf8') for file_index in range(file_count) ]
 except:
     print("Error in opening input file.")
-    sys.exit(0)
+    # sys.exit(0)
 
 
 def make_list(initial_string):

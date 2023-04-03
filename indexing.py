@@ -73,7 +73,7 @@ for file_index in range(file_count):
         input_file = pd.read_csv(filepath+'/pr0f_data-'+chr(ord('a')+file_index)+'-cleaned.csv',header=None,encoding='utf8')
     except:
         print("Error in opening input file.")
-        sys.exit(0)
+        # sys.exit(0)
     input_file.drop(index=0,inplace=True)
     number_of_professors = len(input_file)
     
